@@ -14,7 +14,7 @@ export function Navbar() {
   );
 }
 
-export function NavItemLink({ navItem }: { navItem: NavItem }) {
+function NavItemLink({ navItem }: { navItem: NavItem }) {
   return (
     <li>
       <NavLink
