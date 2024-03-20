@@ -55,7 +55,7 @@
   }
   body {
     @apply cursor-default bg-background text-foreground transition-colors;
-    @apply selection:bg-primary/75 selection:text-white;
+    @apply selection:bg-blue-700 selection:text-white;
   }
   img {
     @apply selection:bg-primary/25;

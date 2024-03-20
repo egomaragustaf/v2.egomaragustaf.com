@@ -66,7 +66,7 @@ export function NavItemLink({
         onClick={onClick}
         className={({ isActive }) =>
           cn(
-            "focus-ring inline-flex select-none items-center gap-2 rounded-md px-2 py-1 font-semibold transition hover:bg-secondary",
+            "focus-ring inline-flex select-none items-center gap-2 rounded-md px-2 py-1 font-bold transition hover:bg-secondary",
             isActive && "text-primary"
           )
         }>

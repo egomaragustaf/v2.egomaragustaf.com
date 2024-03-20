@@ -14,12 +14,14 @@ export default function Index() {
   return (
     <Layout>
       <div className="site-container">
-        <section className="site-section space-y-10">
-          <h1 className="text-center">Welcome to egomaragustaf.com</h1>
-          <p className="text-blue-500 text-center max-w-4xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-            numquam harum tempore dolorem nam, id nostrum ipsa reprehenderit est
-            culpa iure eligendi nemo, sit et fugit, unde beatae earum eius.
+        <section className="site-section flex flex-col gap-4">
+          <h3>Hi!</h3>
+          <h1>
+            I’m <span className="text-indigo-400">Ego Maragustaf</span>
+          </h1>
+          <p className="text-lg">
+            a <b>front-end developer</b> who design beautifuly simple things,
+            and love what I do
           </p>
         </section>
       </div>
