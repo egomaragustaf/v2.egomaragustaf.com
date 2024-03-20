@@ -24,51 +24,17 @@ export function NavbarMenu() {
       </SheetTrigger>
 
       <SheetContent className="flex flex-col justify-between">
-        <div className="mb-10 space-y-6">
-          <SheetHeader className="flex items-start font-bold text-2xl gap-2">
-            <NavLinkMenu
-              to="/"
+        <ul className="flex flex-col font-semibold text-xl items-end gap-6 mt-10">
+          {configNavigationItems.map((navItem) => (
+            <NavItemLinkMenu
+              key={navItem.path}
               onOpenChange={setOpen}
-              className="rounded-xs transition hover:text-primary">
-              <span>EGM</span>
-            </NavLinkMenu>
-          </SheetHeader>
-
-          <ul className="flex flex-col font-semibold text-xl items-end gap-4">
-            {configNavigationItems.map((navItem) => (
-              <NavItemLinkMenu
-                key={navItem.path}
-                onOpenChange={setOpen}
-                navItem={navItem}
-              />
-            ))}
-          </ul>
-        </div>
+              navItem={navItem}
+            />
+          ))}
+        </ul>
       </SheetContent>
     </Sheet>
-  );
-}
-
-function NavLinkMenu({
-  to,
-  onOpenChange,
-  className,
-  children,
-}: {
-  onOpenChange: (open: boolean) => void;
-} & NavLinkProps) {
-  const navigate = useNavigate();
-
-  return (
-    <NavLink
-      to={to}
-      onClick={() => {
-        navigate(to.toString());
-        onOpenChange?.(false);
-      }}
-      className={cn("focus-ring", className)}>
-      {children}
-    </NavLink>
   );
 }
 
@@ -82,12 +48,14 @@ function NavItemLinkMenu({
   const navigate = useNavigate();
 
   return (
-    <NavItemLink
-      navItem={navItem}
-      onClick={() => {
-        navigate(navItem.path.toString());
-        onOpenChange?.(false);
-      }}
-    />
+    <>
+      <NavItemLink
+        navItem={navItem}
+        onClick={() => {
+          navigate(navItem.path.toString());
+          onOpenChange?.(false);
+        }}
+      />
+    </>
   );
 }

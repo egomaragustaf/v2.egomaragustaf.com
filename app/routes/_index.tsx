@@ -15,7 +15,7 @@ export default function Index() {
     <Layout>
       <div className="site-container">
         <section className="site-section space-y-10">
-          <h1 className="text-xl text-center">Welcome to egomaragustaf.com</h1>
+          <h1 className="text-center">Welcome to egomaragustaf.com</h1>
           <p className="text-blue-500 text-center max-w-4xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
             numquam harum tempore dolorem nam, id nostrum ipsa reprehenderit est
