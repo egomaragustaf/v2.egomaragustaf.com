@@ -1,34 +1,76 @@
-import { Link, NavLink } from "@remix-run/react";
+import { Link, NavLink, NavLinkProps } from "@remix-run/react";
 import { NavItem, configNavigationItems } from "~/components/config/navigation";
 import { cn } from "~/utils/cn";
+import { NavbarMenu } from "~/components/layout/navbar-menu";
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-40 items-center justify-between gap-2 bg-background p-4 transition-colors lg:flex">
-      <Link to="/">
-        <h1 className="text-2xl font-bold">EGM</h1>
-      </Link>
-      <ul className="flex items-center gap-6">
-        {configNavigationItems.map((navItem) => (
-          <NavItemLink key={navItem.path} navItem={navItem} />
-        ))}
-      </ul>
+    <>
+      <NavbarLarge />
+      <NavbarSmall />
+    </>
+  );
+}
+
+function NavbarSmall() {
+  return (
+    <nav
+      className={cn(
+        "sticky top-0 z-20 flex items-center justify-between gap-2 bg-background p-2 transition-colors lg:hidden"
+      )}>
+      <div className="flex items-center justify-between gap-2">
+        <Link
+          to="/"
+          prefetch="intent"
+          className="focus-ring block rounded-xs transition hover:opacity-75">
+          <span>EGM</span>
+        </Link>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <>
+          <NavbarMenu />
+        </>
+      </div>
     </nav>
   );
 }
 
-function NavItemLink({ navItem }: { navItem: NavItem }) {
+function NavbarLarge() {
+  return (
+    <nav className="sticky top-0 z-40 hidden items-center justify-between gap-2 bg-background p-4 transition-colors lg:flex">
+      <Link to="/">
+        <h1 className="text-2xl font-bold">EGM</h1>
+      </Link>
+
+      <div className="flex items-center gap-4">
+        <ul className="flex items-center gap-4">
+          {configNavigationItems.map((navItem) => (
+            <NavItemLink key={navItem.path} navItem={navItem} />
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+}
+
+export function NavItemLink({
+  navItem,
+  onClick,
+}: { navItem: NavItem } & Pick<NavLinkProps, "onClick">) {
   return (
     <li>
       <NavLink
         to={navItem.path}
+        prefetch="intent"
+        onClick={onClick}
         className={({ isActive }) =>
           cn(
-            "focus-ring lg:inline-flex select-none items-center gap-2 rounded-md px-2 py-1 font-semibold transition hover:bg-secondary",
+            "focus-ring inline-flex select-none items-center gap-2 rounded-md px-2 py-1 font-semibold transition hover:bg-secondary",
             isActive && "text-primary"
           )
         }>
-        <span>{navItem.text}</span>
+        <span className="select-none">{navItem.text}</span>
       </NavLink>
     </li>
   );
