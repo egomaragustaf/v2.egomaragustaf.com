@@ -15,8 +15,8 @@ export default function Index() {
     <Layout>
       <div className="site-container">
         <section className="site-section space-y-10">
-          <h1 className="text-xl text-center">About Me</h1>
-          <p className="text-blue-500 text-center max-w-4xl">
+          <h1 className="text-xl text-primary text-center">About Me</h1>
+          <p className="text-center max-w-4xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
             numquam harum tempore dolorem nam, id nostrum ipsa reprehenderit est
             culpa iure eligendi nemo, sit et fugit, unde beatae earum eius.

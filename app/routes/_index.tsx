@@ -17,12 +17,16 @@ export default function Index() {
         <section className="site-section flex flex-col gap-4">
           <h3>Hi!</h3>
           <h1>
-            I’m <span className="text-indigo-400">Ego Maragustaf</span>
+            I’m <span className="text-primary">Ego Maragustaf</span>
           </h1>
           <p className="text-lg">
             a <b>front-end developer</b> who design beautifuly simple things,
             and love what I do
           </p>
+          <div className="flex gap-6">
+            <Button>Get in Touch</Button>
+            <Button variant="outline">Resume</Button>
+          </div>
         </section>
       </div>
     </Layout>
