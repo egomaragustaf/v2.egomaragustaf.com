@@ -16,7 +16,7 @@ export default function Index() {
       <div className="site-container">
         <section className="site-section flex flex-col gap-4">
           <h3>Hi!</h3>
-          <h1>
+          <h1 className="text-4xl lg:text-6xl font-bold">
             I’m <span className="text-primary">Ego Maragustaf</span>
           </h1>
           <p className="text-lg">
