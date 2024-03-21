@@ -16,10 +16,12 @@ export function Navbar() {
 }
 
 function NavbarSmall() {
+  const scrolled = useScroll(20);
   return (
     <nav
       className={cn(
-        "sticky top-0 z-20 flex items-center justify-between gap-2 bg-background p-2 transition-colors lg:hidden"
+        "sticky top-0 z-20 flex items-center justify-between gap-2 p-2 transition-colors lg:hidden",
+        { "bg-background/75 backdrop-blur-lg": scrolled }
       )}>
       <div className="flex items-center justify-between gap-2">
         <Link
