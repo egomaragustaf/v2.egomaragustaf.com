@@ -2,8 +2,11 @@ import { Link, NavLink, NavLinkProps } from "@remix-run/react";
 import { NavItem, configNavigationItems } from "~/components/config/navigation";
 import { cn } from "~/utils/cn";
 import { NavbarMenu } from "~/components/layout/navbar-menu";
+import useScroll from "~/hooks/use-scroll";
 
 export function Navbar() {
+  const scrolled = useScroll(20);
+
   return (
     <>
       <NavbarLarge />
@@ -37,8 +40,13 @@ function NavbarSmall() {
 }
 
 function NavbarLarge() {
+  const scrolled = useScroll(20);
   return (
-    <nav className="sticky top-0 z-40 hidden items-center justify-between gap-2 bg-background p-4 transition-colors lg:flex">
+    <nav
+      className={cn(
+        "sticky top-0 z-40 hidden items-center justify-between gap-2 p-4 transition-colors lg:flex",
+        { "bg-background/75 backdrop-blur-lg": scrolled }
+      )}>
       <Link to="/">
         <h1 className="text-2xl font-bold">EGM</h1>
       </Link>
