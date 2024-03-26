@@ -9,7 +9,7 @@ import {
 } from "~/components/ui/sheet";
 import { Button } from "~/components/ui/button";
 import { cn } from "~/utils/cn";
-import { NavItem, configNavigationItems } from "~/components/config/navigation";
+import { NavItem, configNavigationItems } from "~/configs/navigation";
 import { NavItemLink } from "~/components/layout/navbar";
 
 export function NavbarMenu() {

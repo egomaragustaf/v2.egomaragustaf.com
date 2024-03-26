@@ -1,5 +1,5 @@
 import { Link, NavLink, NavLinkProps } from "@remix-run/react";
-import { NavItem, configNavigationItems } from "~/components/config/navigation";
+import { NavItem, configNavigationItems } from "~/configs/navigation";
 import { cn } from "~/utils/cn";
 import { NavbarMenu } from "~/components/layout/navbar-menu";
 import useScroll from "~/hooks/use-scroll";
@@ -20,7 +20,7 @@ function NavbarSmall() {
   return (
     <nav
       className={cn(
-        "sticky top-0 z-20 flex items-center justify-between gap-2 p-2 transition-colors lg:hidden",
+        "sticky top-0 z-20 flex items-center justify-between gap-2 px-4 py-2 transition-colors lg:hidden",
         { "bg-background/75 backdrop-blur-lg": scrolled }
       )}>
       <div className="flex items-center justify-between gap-2">
@@ -76,7 +76,7 @@ export function NavItemLink({
         onClick={onClick}
         className={({ isActive }) =>
           cn(
-            "focus-ring inline-flex select-none items-center gap-2 rounded-md px-2 py-1 font-bold transition hover:bg-secondary",
+            "focus-ring inline-flex select-none items-center gap-2 rounded-md px-4 py-1 font-bold transition hover:bg-secondary",
             isActive && "text-primary"
           )
         }>
