@@ -18,7 +18,7 @@ export default function Index() {
           <section className="site-section flex flex-col gap-6">
             <h3>Nice to meet you!</h3>
             <h1 className="text-4xl lg:text-6xl font-bold">
-              I’m{" "}
+              I&apos;m{" "}
               <span className="text-primary underline underline-offset-[16px]">
                 Ego Maragustaf
               </span>
