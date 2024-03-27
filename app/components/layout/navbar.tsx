@@ -5,8 +5,6 @@ import { NavbarMenu } from "~/components/layout/navbar-menu";
 import useScroll from "~/hooks/use-scroll";
 
 export function Navbar() {
-  const scrolled = useScroll(20);
-
   return (
     <>
       <NavbarLarge />

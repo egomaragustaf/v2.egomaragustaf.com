@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { NavLink, NavLinkProps, useNavigate } from "@remix-run/react";
+import { useNavigate } from "@remix-run/react";
+import { IconMenu } from "@tabler/icons-react";
 
 import {
   Sheet,
@@ -8,7 +9,6 @@ import {
   SheetTrigger,
 } from "~/components/ui/sheet";
 import { Button } from "~/components/ui/button";
-import { cn } from "~/utils/cn";
 import { NavItem, configNavigationItems } from "~/configs/navigation";
 import { NavItemLink } from "~/components/layout/navbar";
 
@@ -18,8 +18,8 @@ export function NavbarMenu() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="outline">
-          <span>Menu</span>
+        <Button variant="outline" className="border-none bg-transparent">
+          <IconMenu />
         </Button>
       </SheetTrigger>
 
