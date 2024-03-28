@@ -18,7 +18,7 @@ function NavbarSmall() {
   return (
     <nav
       className={cn(
-        "sticky top-0 z-20 flex items-center justify-between gap-2 px-4 py-2 transition-colors lg:hidden",
+        "sticky top-0 z-50 flex items-center justify-between gap-2 px-4 py-2 transition-colors lg:hidden",
         { "bg-background/75 backdrop-blur-lg": scrolled }
       )}>
       <div className="flex items-center justify-between gap-2">

@@ -18,7 +18,7 @@ export function NavbarMenu() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="outline" className="border-none bg-transparent">
+        <Button variant="outline" className="w-fit border-none bg-transparent">
           <IconMenu />
         </Button>
       </SheetTrigger>
