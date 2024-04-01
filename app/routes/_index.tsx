@@ -14,13 +14,10 @@ export default function Index() {
   return (
     <Layout>
       <div className="mx-auto min-h-screen w-full max-w-7xl space-y-20 px-4 sm:space-y-32">
-        <BackgroundGrid>
-          <section>
-            <div className="site-section">
-              <Hero />
-            </div>
-          </section>
-        </BackgroundGrid>
+        <section className="site-section mt-20">
+          <BackgroundGrid />
+          <Hero />
+        </section>
       </div>
     </Layout>
   );

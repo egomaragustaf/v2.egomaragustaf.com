@@ -1,6 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import { About } from "~/components/contents/about";
 import { Layout } from "~/components/layout/layout";
+import { BackgroundGrid } from "~/components/shared/background";
 import { Button } from "~/components/ui/button";
 
 export const meta: MetaFunction = () => {
@@ -10,17 +12,13 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+export default function Route() {
   return (
     <Layout>
-      <div className="site-container">
-        <section className="site-section space-y-10">
-          <h1 className="text-xl text-primary text-center">About Me</h1>
-          <p className="text-center max-w-4xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-            numquam harum tempore dolorem nam, id nostrum ipsa reprehenderit est
-            culpa iure eligendi nemo, sit et fugit, unde beatae earum eius.
-          </p>
+      <div className="mx-auto min-h-screen w-full max-w-7xl space-y-20 px-4 sm:space-y-32">
+        <section className="site-section mt-20">
+          <BackgroundGrid />
+          <About />
         </section>
       </div>
     </Layout>
