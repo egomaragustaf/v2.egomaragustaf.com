@@ -3,7 +3,7 @@ export function About() {
     <div className="space-y-10">
       <section className="flex flex-col select-none flex-wrap items-start justify-center gap-4">
         <h1>About</h1>
-        <h5>My short story about me.</h5>
+        <h5>Let me quickly tell you about myself and what I enjoy doing.</h5>
       </section>
 
       <article className="prose-config">

@@ -1,6 +1,7 @@
+import { Link } from "@remix-run/react";
+
 import { Button } from "~/components/ui/button";
 import { Stacks } from "~/components/contents/stacks";
-import { Link } from "@remix-run/react";
 
 export function Hero() {
   return (

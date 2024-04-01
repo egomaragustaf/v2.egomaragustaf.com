@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import {
   SiNextdotjs,
   SiReact,
@@ -7,25 +8,36 @@ import {
   SiVisualstudio,
 } from "react-icons/si";
 
-interface StackItem {
-  name: String;
-  icon: String;
-  url: String;
-}
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "~/components/ui/tooltip";
 
 export function Stacks() {
   return (
     <section className="flex flex-col items-start justify-center gap-4">
       <h4>Favorite Tech Stack & Tools</h4>
-      <ul className="flex items-center gap-6">
-        {techStackItems.map((item) => (
-          <li
-            key={item.name}
-            className="hover:text-primary transition duration-500">
-            {item.icon}
-          </li>
-        ))}
-      </ul>
+
+      <TooltipProvider>
+        <ul className="flex item-center gap-6">
+          {techStackItems.map((item) => (
+            <li
+              key={item.name}
+              className="hover:text-primary transition duration-500">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link to={item.url}>{item.icon}</Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{item.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            </li>
+          ))}
+        </ul>
+      </TooltipProvider>
     </section>
   );
 }
