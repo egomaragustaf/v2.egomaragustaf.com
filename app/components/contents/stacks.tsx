@@ -28,7 +28,9 @@ export function Stacks() {
               className="hover:text-primary transition duration-500">
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link to={item.url}>{item.icon}</Link>
+                  <Link to={item.url} target="_blank">
+                    {item.icon}
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{item.name}</p>
