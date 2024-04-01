@@ -1,9 +1,9 @@
 export function Projects() {
   return (
     <div className="space-y-10">
-      <section className="flex flex-col select-none flex-wrap items-start justify-center gap-2">
+      <section className="flex flex-col select-none flex-wrap items-start justify-center gap-4">
         <h1>Project</h1>
-        <p>Showcase of my software development journey.</p>
+        <h5>Showcase of my software development journey.</h5>
       </section>
 
       <article className="prose-config">

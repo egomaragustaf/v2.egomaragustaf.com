@@ -1,9 +1,9 @@
 export function About() {
   return (
     <div className="space-y-10">
-      <section className="flex flex-col select-none flex-wrap items-start justify-center gap-2">
+      <section className="flex flex-col select-none flex-wrap items-start justify-center gap-4">
         <h1>About</h1>
-        <p>My short story about me.</p>
+        <h5>My short story about me.</h5>
       </section>
 
       <article className="prose-config">
