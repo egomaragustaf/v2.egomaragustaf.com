@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Hero } from "~/components/contents/hero";
 import { Layout } from "~/components/layout/layout";
-import { BackgroundGrid } from "~/components/shared/background";
+import { BackgroundGridLarge } from "~/components/shared/background";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,7 +15,7 @@ export default function Index() {
     <Layout>
       <div className="mx-auto min-h-screen w-full max-w-7xl space-y-20 px-4 sm:space-y-32">
         <section className="site-section mt-20">
-          <BackgroundGrid />
+          <BackgroundGridLarge />
           <Hero />
         </section>
       </div>

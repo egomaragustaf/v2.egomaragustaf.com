@@ -96,3 +96,9 @@
     @apply mx-auto w-full max-w-prose;
   }
 }
+
+@layer utilities {
+  .prose-config {
+    @apply prose prose-slate dark:prose-invert focus:outline-none;
+  }
+}
