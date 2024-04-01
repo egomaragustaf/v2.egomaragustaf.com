@@ -1,5 +1,5 @@
 import { Button } from "~/components/ui/button";
-import { cn } from "~/utils/cn";
+import { Stacks } from "~/components/contents/stacks";
 
 export function Hero() {
   return (
@@ -21,16 +21,7 @@ export function Hero() {
         </div>
       </section>
 
-      <section>
-        <h4>Favorite Tech Stack</h4>
-        <ul className="flex flex-wrap gap-4">
-          <li className="hover:text-primary">React</li>
-          <li className="hover:text-primary">Typescript</li>
-          <li className="hover:text-primary">Remix</li>
-          <li className="hover:text-primary">Next.js</li>
-          <li className="hover:text-primary">Tailwind</li>
-        </ul>
-      </section>
+      <Stacks />
     </div>
   );
 }
