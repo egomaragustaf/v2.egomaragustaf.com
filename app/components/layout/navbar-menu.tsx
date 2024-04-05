@@ -8,7 +8,6 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "~/components/ui/sheet";
-import { Button } from "~/components/ui/button";
 import { NavItem, configNavigationItems } from "~/configs/navigation";
 import { NavItemLink } from "~/components/layout/navbar";
 
@@ -18,9 +17,7 @@ export function NavbarMenu() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="outline" className="w-fit border-none bg-transparent">
-          <IconMenu />
-        </Button>
+        <IconMenu />
       </SheetTrigger>
 
       <SheetContent className="flex flex-col justify-between">
