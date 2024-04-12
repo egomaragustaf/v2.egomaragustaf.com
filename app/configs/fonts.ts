@@ -1,5 +1,3 @@
-import sansFontStyles from "@fontsource-variable/plus-jakarta-sans/wght.css?url";
+import sansFontStyles from "@fontsource-variable/inter/wght.css?url";
 
-export const fontLinks = [
-    { rel: "stylesheet", href: sansFontStyles },
-]
+export const fontLinks = [{ rel: "stylesheet", href: sansFontStyles }];

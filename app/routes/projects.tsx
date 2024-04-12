@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Route() {
   return (
     <Layout>
-      <div className="mx-auto min-h-screen w-full max-w-7xl space-y-20 px-4 sm:space-y-32">
+      <div className="site-container space-y-20 sm:space-y-32">
         <section className="site-section mt-20">
           <BackgroundGridSmall />
           <Projects />

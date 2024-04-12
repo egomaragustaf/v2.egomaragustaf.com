@@ -9,11 +9,11 @@ export function About() {
       <article className="prose-config">
         <h3>Hi there!</h3>
         <p>
-          I'm Ego. I started learning about web development in college period
-          with a little knowledge. So, in early 2023, I decided to pursue about
-          web development. Also, I started watching a lot of youtube videos,
-          join some course, and take mentorship to explore more about web
-          development especially front-end development.
+          I&apos;m Ego. I started learning about web development in college
+          period with a little knowledge. So, in early 2023, I decided to pursue
+          about web development. Also, I started watching a lot of youtube
+          videos, join some course, and take mentorship to explore more about
+          web development especially front-end development.
         </p>
         <h3>Why Front-End Developer?</h3>
         <p>

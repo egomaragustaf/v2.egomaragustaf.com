@@ -26,14 +26,15 @@
     --radius: 0.5rem;
   }
 
+  /* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
   .dark {
-    --background: 20 14.3% 4.1%;
+    --background: 216 18.07% 16.27%; /* #222831 */
     --foreground: 0 0% 95%;
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
-    --primary: 142.1 70.6% 45.3%;
+    --primary: 182.65 100% 35.49%; /* #00ADB5 */
     --primary-foreground: 144.9 80.4% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -43,7 +44,7 @@
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
+    --border: 216.9 10.2% 24.9%; /* #393E46 */
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
@@ -93,12 +94,12 @@
     @apply mx-auto min-h-screen w-full max-w-7xl px-4 pt-12;
   }
   .site-section {
-    @apply mx-auto w-full max-w-prose;
+    @apply mx-auto w-full;
   }
 }
 
 @layer utilities {
   .prose-config {
-    @apply prose prose-slate dark:prose-invert focus:outline-none;
+    @apply prose-lg prose-slate dark:prose-invert focus:outline-none;
   }
 }
