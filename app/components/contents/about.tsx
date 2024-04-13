@@ -2,12 +2,12 @@ export function About() {
   return (
     <div className="space-y-10">
       <section className="flex flex-col select-none flex-wrap items-start justify-center gap-4">
-        <h1>About</h1>
+        <h1 className="text-primary">About</h1>
         <h5>Let me quickly tell you about myself and what I enjoy doing.</h5>
       </section>
 
       <article className="prose-config">
-        <h3>Hi there!</h3>
+        <h2>Hi there!</h2>
         <p>
           I&apos;m Ego. I started learning about web development in college
           period with a little knowledge. So, in early 2023, I decided to pursue
@@ -15,7 +15,7 @@ export function About() {
           videos, join some course, and take mentorship to explore more about
           web development especially front-end development.
         </p>
-        <h3>Why Front-End Developer?</h3>
+        <h2>Why Front-End Developer?</h2>
         <p>
           I love to translate every idea into beautiful and functional website.
           As a front-end developer, I am motivated to learn a lot of

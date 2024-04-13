@@ -20,7 +20,7 @@ export function CardProject() {
       <CardContent className="p-6">
         <div className="space-y-1.5">
           <h4 className="tracking-tight">Project Title</h4>
-          <p className="leading-loose text-gray-500 dark:text-gray-400">
+          <p className="text-gray-500 dark:text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
             possimus ab! Voluptates debitis animi est error ullam.
           </p>
