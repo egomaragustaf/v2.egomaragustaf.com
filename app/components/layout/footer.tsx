@@ -14,9 +14,9 @@ function SiteFooterSource() {
   return (
     <section className="relative site-section py-10">
       <BackgroundGridFooter />
-      <div className="max-w-7xl mx-auto grid gap-10 lg:grid-flow-col">
+      <div className="max-w-7xl mx-auto grid gap-10 lg:grid-flow-col text-muted-foreground">
         <div className="col-span-3 space-y-4">
-          <h5>Hello!</h5>
+          <h5 className="text-muted-foreground">Hello!</h5>
           <p>
             I&apos;m Ego - a front-end developer, blogger, and learner. Thanks
             for checking out my site!
