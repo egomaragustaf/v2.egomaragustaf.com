@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Projects } from "~/components/contents/projects";
 import { Layout } from "~/components/layout/layout";
-import { BackgroundGridSmall } from "~/components/shared/background";
+import { BackgroundGridPage } from "~/components/shared/background";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,7 +15,7 @@ export default function Route() {
     <Layout>
       <div className="site-container space-y-20 sm:space-y-32">
         <section className="site-section mt-20">
-          <BackgroundGridSmall />
+          <BackgroundGridPage />
           <Projects />
         </section>
       </div>

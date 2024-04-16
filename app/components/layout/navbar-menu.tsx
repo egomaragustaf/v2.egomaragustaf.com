@@ -2,12 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "@remix-run/react";
 import { IconMenu } from "@tabler/icons-react";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTrigger,
-} from "~/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet";
 import { NavItem, configNavigationItems } from "~/configs/navigation";
 import { NavItemLink } from "~/components/layout/navbar";
 
