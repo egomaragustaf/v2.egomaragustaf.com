@@ -7,7 +7,7 @@ export function About() {
       </section>
 
       <article className="prose-config">
-        <h2>Hi there!</h2>
+        <h3>Hi there!</h3>
         <p>
           I&apos;m Ego. I started learning about web development in college
           period with a little knowledge. So, in early 2023, I decided to pursue
@@ -15,7 +15,7 @@ export function About() {
           videos, join some course, and take mentorship to explore more about
           web development especially front-end development.
         </p>
-        <h2>Why Front-End Developer?</h2>
+        <h3>Why Front-End Developer?</h3>
         <p>
           I love to translate every idea into beautiful and functional website.
           As a front-end developer, I am motivated to learn a lot of
