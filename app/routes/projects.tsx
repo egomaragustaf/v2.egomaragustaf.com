@@ -14,7 +14,7 @@ export default function Route() {
   return (
     <Layout>
       <div className="site-container space-y-20 sm:space-y-32">
-        <section className="site-section mt-20">
+        <section className="site-section mt-10 lg:mt-20">
           <BackgroundGridPage />
           <Projects />
         </section>

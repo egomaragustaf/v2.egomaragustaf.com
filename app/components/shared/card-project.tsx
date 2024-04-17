@@ -3,7 +3,7 @@ import { Card, CardContent } from "~/components/ui/card";
 
 export function CardProject() {
   return (
-    <Card className="w-full rounded-xl overflow-hidden flex flex-col md:flex-row mx-auto">
+    <Card className="w-full rounded-xl overflow-hidden flex flex-col md:flex-row mx-auto hover:border-primary transition duration-300">
       <div className="aspect-video overflow-hidden">
         <img
           alt="Project 1"

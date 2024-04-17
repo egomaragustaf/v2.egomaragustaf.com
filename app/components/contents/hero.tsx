@@ -5,9 +5,9 @@ import { Stacks } from "~/components/contents/stacks";
 
 export function Hero() {
   return (
-    <div className="space-y-10">
+    <div className="lg:space-y-10">
       <section className="flex flex-col select-none flex-wrap items-start justify-center gap-2">
-        <h4>Nice to meet you! 👋 </h4>
+        <h4>Hello, nice to meet you! 👋 </h4>
         <h1 className="mb-6">
           I&apos;m <span className="text-primary">Ego Maragustaf</span>
         </h1>
