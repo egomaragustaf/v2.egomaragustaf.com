@@ -28,13 +28,13 @@
 
   /* https://colorhunt.co/palette/040d12183d3d5c837493b1a6 */
   .dark {
-    --background: 201.43, 63.64%, 4.31%; /* #040D12 */
+    --background: 201.43 63.64% 4.31%; /* #040D12 */
     --foreground: 0 0% 95%;
-    --card: 201.43, 63.64%, 4.31%; /* #040D12 */
+    --card: 201.43 63.64% 4.31%; /* #040D12 */
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
-    --primary: 156.92, 17.49%, 43.73%; /* #5C8374 */
+    --primary: 156.92 17.49% 43.73%; /* #5C8374 */
     --primary-foreground: 144.9 80.4% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -44,7 +44,7 @@
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 180, 43.53%, 16.67%; /* #183D3D */
+    --border: 180 43.53% 16.67%; /* #183D3D */
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
