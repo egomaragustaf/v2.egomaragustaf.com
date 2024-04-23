@@ -75,7 +75,7 @@ export function NavItemLink({
         className={({ isActive }) =>
           cn(
             "focus-ring inline-flex select-none items-center gap-2 rounded-md px-4 py-1 font-bold transition hover:bg-secondary",
-            isActive && "text-primary"
+            isActive && "text-primary hover:text-white"
           )
         }>
         <span className="select-none">{navItem.text}</span>

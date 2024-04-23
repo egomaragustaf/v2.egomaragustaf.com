@@ -9,11 +9,15 @@ export const configNavigationItems: NavItem[] = [
     text: "Home",
   },
   {
+    path: "/about",
+    text: "About",
+  },
+  {
     path: "/projects",
     text: "Projects",
   },
   {
-    path: "/about",
-    text: "About",
+    path: "/blog",
+    text: "Blog",
   },
 ];
